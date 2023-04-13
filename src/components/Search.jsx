@@ -4,8 +4,8 @@ export function Search () {
   return (
     <div className='
         border-[1px]
-        w-full
         py-2
+        px-2
         rounded-full
         shadow-sm
         hover:shadow-md
@@ -23,7 +23,7 @@ export function Search () {
                 <div className='
                     text-sm
                     font-semibold
-                    px-6
+                    px-4
                 '>
                     <p>Anywhere</p>
                 </div>
@@ -32,7 +32,7 @@ export function Search () {
                     border-r-2
                     text-sm
                     font-semibold
-                    px-6
+                    px-4
                     '>
                     <p>Any week</p>
                 </div>
@@ -40,6 +40,8 @@ export function Search () {
                     flex
                     items-center
                     justify-center
+                    gap-2
+                    px-4
                     '>
                     <div className='
                         text-sm
@@ -47,14 +49,17 @@ export function Search () {
                     '>
                         <p>Add Guests</p>
                     </div>
-                    <img
-                    className='
-                        object-contain
+                    <div className='
+                        w-6
                         h-6
-                        px-6
-                    '
-                    src={searchIcon}
-                    alt='search'/>
+                        rounded-full
+                        bg-color-primary
+                    '>
+                        <img
+                        className='p-1'
+                            src={searchIcon}
+                            alt='search'/>
+                    </div>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import { Search } from './Search'
+import { UserMenu } from './UserMenu'
 import logo from '../assets/airbnb.svg'
 export function NavBar () {
   return (
@@ -7,16 +8,25 @@ export function NavBar () {
         flex
         flex-row
         shadow-md
-        justify-evenly
-        items-center'>
-        <img
-        className='
-            w-40
-            h-100
-            p-6'
-        src={logo}
-        alt='logo'/>
-        <Search/>
+        justify-center
+        '>
+          <div className='
+            justify-between
+            w-11/12
+            flex
+            flex-row
+            items-center'>
+            <img className='
+                w-40
+                h-100
+                p-6'
+              src={logo}
+              alt='logo'
+            />
+            <Search/>
+            <UserMenu />
+          </div>
+
     </header>
   //
   )
