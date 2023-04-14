@@ -1,8 +1,13 @@
-import { NavBar } from './components/NavBar'
+import { NavBar } from './components/Header/NavBar'
+import { Categories } from './components/Categories/Categories'
 
 function App () {
   return (
-    <NavBar></NavBar>
+    <>
+      <NavBar></NavBar>
+      <Categories />
+    </>
+
   )
 }
 
